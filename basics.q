@@ -42,3 +42,15 @@ til 10 / til takes a non-negative int & returns first n int starting from 0
 1+2*til / first 10 odd numbers right to left, multiply 2 to each num and add 1 to each num
 
 42+2*til 10 / first 10 even numbers starting from 42
+
+a1:(1;2;3) 
+a2:(4;5;6)
+a3:a1,a2 / use , to join lists. it will join the right operand to the left operand
+a4:a2,a1
+
+2#a1 / to extract items from front or back of list use # , take operator. positive argument means take from front, negative means back
+
+-2#a1 / does not actually remove items from list
+
+0#a1 / returns an empty list of same type as list type if list is a mix of types then will return general empty list
+
