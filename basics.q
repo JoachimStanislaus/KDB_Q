@@ -48,9 +48,16 @@ a2:(4;5;6)
 a3:a1,a2 / use , to join lists. it will join the right operand to the left operand
 a4:a2,a1
 
-2#a1 / to extract items from front or back of list use # , take operator. positive argument means take from front, negative means back
+2#a1 / to extract items from front or back of list use # , take operator. positive argument means take from front, 
 
--2#a1 / does not actually remove items from list
+-2#a1 / negative means back, does not actually remove items from list
 
 0#a1 / returns an empty list of same type as list type if list is a mix of types then will return general empty list
+
+5#a1 / if extracting more items than there are in the list, # restarts from the beginnning
+
+5#42 / if applying # to atom it will continue drawing that single atom till has specified num of copies
+5#`123 / atoms are any single value type that isn't a list
+
+a1[0] / you can index lists, when indexing out of range will return 0N
 
