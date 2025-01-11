@@ -61,3 +61,17 @@ a4:a2,a1
 
 a1[0] / you can index lists, when indexing out of range will return 0N
 
+a1[til 2] / you can slice lists as well
+
+count a1 / use count keyword to get count of list
+
+sq:{[x] x*x} / function sq squares the input, [x] bracket defines the input
+
+sq 5 / using a function
+
+sumsq:{[x,y] a:x*x; b:y*y; a+b} / a more complex function
+
+sumsq [5;6] 
+
+sq:{x*x} / we don't need [] brackets for single parameter functions, function prefix syntax
+
