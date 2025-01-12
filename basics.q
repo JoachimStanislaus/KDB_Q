@@ -75,3 +75,28 @@ sumsq [5;6]
 
 sq:{x*x} / we don't need [] brackets for single parameter functions, function prefix syntax
 
+42+100 200 300 / adding 42 to each item in a list
+
+100 200 300+1 2 3 / adding 2 lists together according to index, 101 202 303
+
+100=99 100 101 / checking if any of the atoms in list equals to 100
+
+100<99 100 101 / check if any of the list bigger than 100
+
+0+/ 1 2 3 4 5 / add all of the values in the list to 0, 15 "/" is the over keyword 
+
+0 +/ 1+til 10 /  add all the values in the list to 0, 55
+
+1*/1+til 3 / multiply 1 by all the numbers in the list, 6
+
+(+/) 1 2 3 / sum of all atoms
+
+0 {x+y}/ 1 2 3 4 5 / sum of all, applying function {x+y} to all
+
+0 {x+y}/ 1+til 100 / sum of all applying function {x+y} to all
+
+42|98 / | returns the larger of the operands
+
+42&98 / & returns the smaller of the operands
+
+
