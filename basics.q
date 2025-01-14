@@ -20,7 +20,7 @@ c1:c1+5 / adding 5 days to the date
 d:12:00:00.000000000 / this is noon, time value is represented by timespan which is long type of num of nano seconds since midnight
 d:12:00:00.000000000+1000 / to advance time by 1 microsecond, add 1000 nanoseconds
 
-c1=5 / will be 1b as actual value stored is 5 
+c1=5 / will be 1b as actual value stored is 5
 
 word1:`aapl / symbols (strings in other languages) denoted by leading back-quote `
 
@@ -69,7 +69,7 @@ sq:{[x] x*x} / function sq squares the input, [x] bracket defines the input
 
 sq 5 / using a function
 
-sumsq:{[x,y] a:x*x; b:y*y; a+b} / a more complex function
+sumsq:{[x;y] a:x*x; b:y*y; a+b} / a more complex function
 
 sumsq [5;6] 
 
